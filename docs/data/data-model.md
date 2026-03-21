@@ -131,22 +131,21 @@ SecurityAuditEvent *--1 User (opcional)
 ### `product`
 
 
-| Campo                   | Tipo                    | Notas                            |
-| ----------------------- | ----------------------- | -------------------------------- |
-| id                      | BIGINT PK               |                                  |
-| sku                     | VARCHAR(64) UNIQUE NULL | Opcional MVP                     |
-| name                    | VARCHAR(255)            |                                  |
-| slug                    | VARCHAR(280) UNIQUE     |                                  |
-| description             | TEXT NULL               |                                  |
+| Campo                   | Tipo                    | Notas                                            |
+| ----------------------- | ----------------------- | ------------------------------------------------ |
+| id                      | BIGINT PK               |                                                  |
+| sku                     | VARCHAR(64) UNIQUE NULL | Opcional MVP                                     |
+| name                    | VARCHAR(255)            |                                                  |
+| slug                    | VARCHAR(280) UNIQUE     |                                                  |
+| description             | TEXT NULL               |                                                  |
 | primary_image_url       | VARCHAR(2048) NULL      | URL publica imagen principal (CDN, bucket, etc.) |
-| price                   | DECIMAL(12,2)           |                                  |
-| stock_quantity          | INT                     | >= 0                             |
-| status                  | ENUM                    | `DRAFT`, `PUBLISHED`, `ARCHIVED` |
-| created_at / updated_at | TIMESTAMP               |                                  |
+| price                   | DECIMAL(12,2)           |                                                  |
+| stock_quantity          | INT                     | >= 0                                             |
+| status                  | ENUM                    | `DRAFT`, `PUBLISHED`, `ARCHIVED`                 |
+| created_at / updated_at | TIMESTAMP               |                                                  |
 
 
 **Imagenes adicionales (opcional post-MVP o si el catalogo lo exige):** tabla `product_image` con `product_id`, `image_url`, `sort_order` para galeria. En MVP suele alcanzar `primary_image_url` en `product`.
-
 
 ### Relacion producto-categoria
 

@@ -6,7 +6,7 @@ Mapa general para ubicar rapidamente cada documento del proyecto.
 
 - Si estas arrancando: leer `product/product_vision_imperial_shop.md` -> `product/backlog.md` -> `scrum/sprint-1-scope.md`.
 - Si vas a desarrollar una historia: leer primero su `US-XXX` y luego el `core-business-flow` relacionado.
-- Si hay dudas de implementacion: revisar `architecture/adr/`.
+- Si hay dudas de implementacion: revisar `architecture/adr/` y `architecture/product-media-storage.md` (imagenes de producto).
 - Si hay dudas de datos: revisar `data/data-model.md`.
 - Antes de cerrar una historia: validar `scrum/definition-of-done.md`.
 
@@ -52,7 +52,11 @@ Mapa general para ubicar rapidamente cada documento del proyecto.
 - Tareas tecnicas de seguridad `SEC-001` a `SEC-005`.
 - Indice: `security/README.md`
 
-### `architecture/adr/`
+### `architecture/`
+
+- Imagenes de producto (upload, almacenamiento, URL): `architecture/product-media-storage.md`
+
+#### `architecture/adr/`
 
 - ADR-0001 (decision inicial de arquitectura): `architecture/adr/0001-initial-architecture-decision.md`
 - ADR-0002 (clean architecture pragmatica): `architecture/adr/0002-clean-architecture-approach.md`
